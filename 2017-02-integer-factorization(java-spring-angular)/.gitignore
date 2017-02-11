@@ -1,0 +1,10 @@
+# IntelliJ IDEA specific
+**/.idea
+**/*.iml
+
+# Maven specific
+target
+
+# Angular specific
+
+# Node.js specific
