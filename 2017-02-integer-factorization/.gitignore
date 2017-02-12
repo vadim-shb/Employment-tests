@@ -1,0 +1,10 @@
+*.log
+
+# IntelliJ IDEA specific
+**/.idea
+**/*.iml
+
+# Gradle specific
+.gradle
+build
+

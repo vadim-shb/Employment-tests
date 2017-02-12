@@ -1,0 +1,17 @@
+<div class="layout">
+  <div id="input-panel">
+    <md-input-container>
+      <input [(ngModel)]="numberToFactorize" md-input placeholder="Number to factorize" type="number" min="1" max="9007199254740991"/>
+    </md-input-container>
+    <button (click)="factorize(numberToFactorize)" md-raised-button color="primary">Factorize</button>
+  </div>
+  <md-card id="results-panel">
+    <p *ngFor="let factorizedNumber of factorizedNumbers">
+      Number {{factorizedNumber.numberToFactorize}} decompose to factors:
+      <span *ngFor="let factor of factorizedNumber.factors; let last = last">
+        <span *ngIf="!last">{{factor}},</span>
+        <span *ngIf="last">{{factor}}</span>
+      </span>
+    </p>
+  </md-card>
+</div>
