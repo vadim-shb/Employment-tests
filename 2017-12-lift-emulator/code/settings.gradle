@@ -1,0 +1,3 @@
+rootProject.name = 'lift-emulator'
+rootProject.buildFileName = 'build.gradle.kts'
+
